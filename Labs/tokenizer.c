@@ -65,11 +65,6 @@ int count_tokens(char* str){
 
   int num = 0;
 
-  //end of string
-  if(*str == '\0'){
-    return 0;
-  }
-
   //continues while not pointing to new line
   while(*str != '\n'){
     str = word_start(str);
